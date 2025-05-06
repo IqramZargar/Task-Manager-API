@@ -1,16 +1,15 @@
 # 📝 Task Manager API
 
-A simple RESTful API built with Django and Django REST Framework for managing tasks — add, update, delete, and track completion status of daily tasks.
+A simple backend project built with Django and Django REST Framework to manage personal tasks — including creating, updating, and deleting tasks through a RESTful API.
 
 ---
 
 ## ⚙️ Features
 
 - ✅ Create new tasks  
-- 📋 List all tasks  
+- 📋 View task list  
 - 🛠️ Update task details  
 - ❌ Delete tasks  
-- ⏰ Add due dates  
 - 📌 Mark tasks as completed  
 
 ---
@@ -20,95 +19,83 @@ A simple RESTful API built with Django and Django REST Framework for managing ta
 - Python  
 - Django  
 - Django REST Framework  
-- SQLite (for easy local dev)  
+- SQLite (default for development)  
 
 ---
 
 ## 📁 Project Structure
 
-taskmanager_project/
-├── My_Proj/ # Main project settings
-│ ├── settings.py
-│ ├── urls.py
-│ └── ...
-├── My_App/ # Django app for task logic
-│ ├── models.py
-│ ├── views.py
-│ ├── serializers.py
+Task-Manager-API/
+├── My_Proj/ # Django project settings
+│ └── settings.py
+│ └── urls.py
+├── My_App/ # Main app for task logic
+│ └── models.py
+│ └── views.py
+│ └── serializers.py
 │ └── urls.py
 ├── db.sqlite3
 ├── manage.py
-├── requirements.txt
 └── README.md
 
-yaml
 ---
 
 ## 🔌 API Endpoints
 
-Base URL: `http://localhost:8000/api/`
+All endpoints are under: `http://localhost:8000/api/`
 
-| Method | Endpoint        | Description             |
-|--------|------------------|-------------------------|
-| GET    | `/tasks/`        | List all tasks          |
-| POST   | `/tasks/`        | Create a new task       |
-| GET    | `/tasks/<id>/`   | Retrieve task details   |
-| PUT    | `/tasks/<id>/`   | Update a task           |
-| DELETE | `/tasks/<id>/`   | Delete a task           |
+| Method | Endpoint         | Description            |
+|--------|------------------|------------------------|
+| GET    | `/tasks/`        | Get all tasks          |
+| POST   | `/tasks/`        | Create a new task      |
+| GET    | `/tasks/<id>/`   | Get a task by ID       |
+| PUT    | `/tasks/<id>/`   | Update a task by ID    |
+| DELETE | `/tasks/<id>/`   | Delete a task by ID    |
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started (Local Setup)
 
-### 🔧 Installation
+### 1. Clone the Repository
 
-1. Clone the repo:
-   ```bash
-   git clone https://github.com/IqramZargar/Task-Manager-API
-   cd Task-Manager-API
-(Optional but recommended) Create a virtual environment:
+```bash
+git clone https://github.com/IqramZargar/Task-Manager-API.git
+cd Task-Manager-API
 
+2. Create a Virtual Environment (optional but recommended)
 bash
-Copy
-Edit
+
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-Install dependencies:
-
+3. Install Required Libraries
 bash
 
-pip install -r requirements.txt
-Run migrations:
-
+pip install django
+pip install djangorestframework
+4. Run Migrations
 bash
-Copy
-Edit
+
 python manage.py migrate
-Start the server:
-
+5. Start the Development Server
 bash
 
 python manage.py runserver
-Open in browser or test using Postman:
+Then open in browser or Postman:
 
 bash
 
 http://localhost:8000/api/tasks/
-📦 Example JSON (POST Body)
-
+📦 Example JSON for Creating a Task (POST)
 json
 
-
 {
-  "title": "Complete assignment",
-  "description": "Finish writing README for task manager",
-  "due_date": "2025-05-06",
+  "title": "Buy groceries",
+  "description": "Milk, Bread, Eggs",
+  "due_date": "2025-05-10",
   "is_completed": false
 }
-
-
 📄 License
 This project is open-source and free to use.
 
 🤝 Contributing
-Pull requests are welcome. For major changes, open an issue first to discuss what you'd like to change.
+Contributions are welcome! Feel free to fork the project and submit a pull request.
