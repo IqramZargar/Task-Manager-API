@@ -44,14 +44,13 @@ Task-Manager-API/
 
 All endpoints are under: `http://localhost:8000/api/`
 
-| Method | Endpoint         | Description            |
+Method. | Endpoint         | Description            |
 |--------|------------------|------------------------|
-| GET    | `/tasks/`        | Get all tasks          |
-| POST   | `/tasks/`        | Create a new task      |
-| GET    | `/tasks/<id>/`   | Get a task by ID       |
-| PUT    | `/tasks/<id>/`   | Update a task by ID    |
-| DELETE | `/tasks/<id>/`   | Delete a task by ID    |
-
+| GET    | `/My_App/`       | Get all tasks          |
+| POST   | `/My_App/`       | Create a new task      |
+| GET    | `/My_App/<id>/`  | Get a task by ID       |
+| PUT    | `/My_App/<id>/`  | Update a task by ID    |
+| DELETE | `/My_App/<id>/`  | Delete a task by ID    |
 ---
 
 ## 🚀 Getting Started (Local Setup)
