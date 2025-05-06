@@ -26,7 +26,7 @@ A simple RESTful API built with Django and Django REST Framework for managing ta
 
 ## 📁 Project Structure
 
-taskmanager_project/
+Taskmanager_project/
 ├── My_Proj/ # Main project settings
 ├── My_App/ # Django app for task logic
 │ ├── models.py
@@ -85,7 +85,9 @@ bash
 
 http://localhost:8000/api/tasks/
 📦 Example JSON (POST body)
+
 json
+
 
 {
   "title": "Complete assignment",
@@ -93,9 +95,13 @@ json
   "due_date": "2025-05-06",
   "is_completed": false
 }
+
+
 📄 License
 This project is open-source and free to use.
 
+
 🤝 Contributing
+
 Pull requests are welcome. For major changes, open an issue first to discuss what you would like to change.
 
