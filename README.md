@@ -6,28 +6,31 @@ A simple RESTful API built with Django and Django REST Framework for managing ta
 
 ## ⚙️ Features
 
-- ✅ Create new tasks
-- 📋 List all tasks
-- 🛠️ Update task details
-- ❌ Delete tasks
-- ⏰ Add due dates
-- 📌 Mark tasks as completed
+- ✅ Create new tasks  
+- 📋 List all tasks  
+- 🛠️ Update task details  
+- ❌ Delete tasks  
+- ⏰ Add due dates  
+- 📌 Mark tasks as completed  
 
 ---
 
 ## 🛠️ Tech Stack
 
-- Python
-- Django
-- Django REST Framework
-- SQLite (default, easy local dev)
+- Python  
+- Django  
+- Django REST Framework  
+- SQLite (for easy local dev)  
 
 ---
 
 ## 📁 Project Structure
 
-Taskmanager_project/
+taskmanager_project/
 ├── My_Proj/ # Main project settings
+│ ├── settings.py
+│ ├── urls.py
+│ └── ...
 ├── My_App/ # Django app for task logic
 │ ├── models.py
 │ ├── views.py
@@ -37,6 +40,9 @@ Taskmanager_project/
 ├── manage.py
 ├── requirements.txt
 └── README.md
+
+yaml
+---
 
 ## 🔌 API Endpoints
 
@@ -50,6 +56,7 @@ Base URL: `http://localhost:8000/api/`
 | PUT    | `/tasks/<id>/`   | Update a task           |
 | DELETE | `/tasks/<id>/`   | Delete a task           |
 
+---
 
 ## 🚀 Getting Started
 
@@ -58,10 +65,12 @@ Base URL: `http://localhost:8000/api/`
 1. Clone the repo:
    ```bash
    git clone https://github.com/IqramZargar/Task-Manager-API
-   cd Task-Manager-Api
+   cd Task-Manager-API
 (Optional but recommended) Create a virtual environment:
 
 bash
+Copy
+Edit
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 Install dependencies:
@@ -72,7 +81,8 @@ pip install -r requirements.txt
 Run migrations:
 
 bash
-
+Copy
+Edit
 python manage.py migrate
 Start the server:
 
@@ -84,7 +94,7 @@ Open in browser or test using Postman:
 bash
 
 http://localhost:8000/api/tasks/
-📦 Example JSON (POST body)
+📦 Example JSON (POST Body)
 
 json
 
@@ -100,8 +110,5 @@ json
 📄 License
 This project is open-source and free to use.
 
-
 🤝 Contributing
-
-Pull requests are welcome. For major changes, open an issue first to discuss what you would like to change.
-
+Pull requests are welcome. For major changes, open an issue first to discuss what you'd like to change.
