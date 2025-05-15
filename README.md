@@ -96,5 +96,5 @@ json
 📄 License
 This project is licensed under the MIT License. See LICENSE for more details.
 
-🤝 Contributing
-Contributions are welcome! Feel free to fork the project and submit a pull request.
+✨ Author
+Made with ❤️ by Muhammad Iqram Zargar
