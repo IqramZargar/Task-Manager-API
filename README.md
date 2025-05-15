@@ -94,7 +94,7 @@ json
   "is_completed": false
 }
 📄 License
-This project is open-source and free to use.
+This project is licensed under the MIT License. See LICENSE for more details.
 
 🤝 Contributing
 Contributions are welcome! Feel free to fork the project and submit a pull request.
